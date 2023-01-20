@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛事</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"> 
+        window.onload = function(){
+            var btns = document.getElementsByTagName("b");
+            var divs = document.getElementById("dd").getElementsByTagName("div");
+            for (var i=0;i<btns.length;i++) {
+                //因为上面的button按钮与下面的div盒子是一一对应关系，所以我们用一个序列号index来控制
+                //给每个btns[i]添加一个属性index
+                btns[i].index = i;
+                btns[i].onclick = function(){
+                    for (var j=0;j<btns.length;j++) {
+                        btns[j].className="gg";
+                    }
+                    // 先清空所有按钮的类名，再给当前的按钮添加一个类名  “置之死地而后生”
+                    this.className="gold";
+                    // 同理，首先隐藏所有的div盒子，再显示与button当前索引号相同的div盒子
+                    for (var k=0;k<divs.length;k++) {
+                          divs[k].style.display="none";
+                    }
+                    divs[this.index].style.display="block";
+                }
+            }
+        }
+    </script> 
+</head>
+<body>
+    <div class="daohang">
+        <div class="daohang-bg">
+            <div class="tubiao">
+                <img src="image/tubiao.png">
+            </div>
+            <div class="links">
+                <ul>
+                    <a href="index.html"><li>首页</li></a>
+                    <a href="cultur.html"><li>文化</li></a>
+                    <a href="saishi.html"><li>赛事</li></a>
+                    <a href="changguan.html"><li>场馆</li></a>
+                    <a href="volunteer.html"><li>志愿者</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-bg">
+            <h3>杭州2022年第19届亚运会</h3>
+        </div>
+    </div>
+    <br><br>
+    <div class="title">
+        <b class="gold">竞技性比赛<br>24项</b>
+        <b class="gg">球类比赛<br>18项</b>
+        <b class="gg">对抗性比赛<br>9项</b>
+        <b class="gg">水上比赛<br>10项</b>
+    </div>
+
+    <div class="content" id="dd">
+        <div>
+            <figure>
+                <img src="image/jj1.jpg">
+                <figcaption>电子竞技</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj2.jpg">
+                <figcaption>霹雳舞</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj3.jpg">
+                <figcaption>田径</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj4.jpg">
+                <figcaption>铁人三项</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj5.jpg">
+                <figcaption>马术</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj6.jpg">
+                <figcaption>现代五项</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj7.jpg">
+                <figcaption>公路自行车</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj8.jpg">
+                <figcaption>场地自行车</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj9.jpg">
+                <figcaption>山地自行车</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj10.jpg">
+                <figcaption>小轮车</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj11.jpg">
+                <figcaption>射箭</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj12.jpg">
+                <figcaption>举重</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj13.jpg">
+                <figcaption>蹦床</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj14.jpg">
+                <figcaption>艺术体操</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj15.jpg">
+                <figcaption>竞技体操</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj16.jpg">
+                <figcaption>象棋</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj17.jpg">
+                <figcaption>国际象棋</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj18.jpg">
+                <figcaption>桥牌</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj19.jpg">
+                <figcaption>围棋</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj20.jpg">
+                <figcaption>射击</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj21.jpg">
+                <figcaption>滑板</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj22.jpg">
+                <figcaption>轮滑</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj23.jpg">
+                <figcaption>武术</figcaption>
+            </figure>
+            <figure>
+                <img src="image/jj24.jpg">
+                <figcaption>攀岩</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img src="image/qiulei1.jpg">
+                <figcaption>足球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei2.jpg">
+                <figcaption>五人制篮球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei3.jpg">
+                <figcaption>三人制篮球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei4.jpg">
+                <figcaption>排球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei5.jpg">
+                <figcaption>沙滩排球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei6.jpg">
+                <figcaption>手球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei7.jpg">
+                <figcaption>羽毛球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei8.jpg">
+                <figcaption>乒乓球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei9.jpg">
+                <figcaption>垒球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei10.jpg">
+                <figcaption>曲棍球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei11.jpg">
+                <figcaption>高尔夫球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei12.jpg">
+                <figcaption>网球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei13.jpg">
+                <figcaption>软式网球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei14.jpg">
+                <figcaption>壁球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei15.jpg">
+                <figcaption>藤球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei16.jpg">
+                <figcaption>板球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei17.jpg">
+                <figcaption>棒球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/qiulei18.jpg">
+                <figcaption>七人制橄榄球</figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img src="image/dk1.jpg">
+                <figcaption>拳击</figcaption>
+            </figure>
+            <figure>
+                <img src="image/dk2.jpg">
+                <figcaption>跆拳道</figcaption>
+            </figure>
+            <figure>
+                <img src="image/dk3.jpg">
+                <figcaption>摔跤</figcaption>
+            </figure>
+            <figure>
+                <img src="image/dk4.jpg">
+                <figcaption>柔道</figcaption>
+            </figure>
+            <figure>
+                <img src="image/dk5.jpg">
+                <figcaption>柔术</figcaption>
+            </figure>
+            <figure>
+                <img src="image/dk6.jpg">
+                <figcaption>克柔术</figcaption>
+            </figure>
+            <figure>
+                <img src="image/dk7.jpg">
+                <figcaption>击剑</figcaption>
+            </figure>
+            <figure>
+                <img src="image/dk8.jpg">
+                <figcaption>卡巴迪</figcaption>
+            </figure>
+            <figure>
+                <img src="image/dk9.jpg">
+                <figcaption>空手道</figcaption>
+            </figure>
+
+        </div>
+        <div>
+            <figure>
+                <img src="image/ss1.jpg">
+                <figcaption>水球</figcaption>
+            </figure>
+            <figure>
+                <img src="image/ss2.jpg">
+                <figcaption>龙舟</figcaption>
+            </figure>
+            <figure>
+                <img src="image/ss3.jpg">
+                <figcaption>皮划艇激流回旋</figcaption>
+            </figure>
+            <figure>
+                <img src="image/ss4.jpg">
+                <figcaption>赛艇</figcaption>
+            </figure>
+            <figure>
+                <img src="image/ss5.jpg">
+                <figcaption>帆船</figcaption>
+            </figure>
+            <figure>
+                <img src="image/ss6.jpg">
+                <figcaption>跳水</figcaption>
+            </figure>
+            <figure>
+                <img src="image/ss7.jpg">
+                <figcaption>花式游泳</figcaption>
+            </figure>
+            <figure>
+                <img src="image/ss8.jpg">
+                <figcaption>皮划艇静水</figcaption>
+            </figure>
+            <figure>
+                <img src="image/ss9.jpg">
+                <figcaption>马拉松游泳</figcaption>
+            </figure>
+            <figure>
+                <img src="image/ss10.jpg">
+                <figcaption>游泳</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <footer>
+        <div id="footer">
+            <p>版权所有 @ 2022 202105015114蒋飞</p>
+            <p>联系邮箱;2721975880@qq.com</p>
+            <p>制作不易，给个高分^_^</p>
+        </div>
+
+    </footer>
+</body>
+</html>

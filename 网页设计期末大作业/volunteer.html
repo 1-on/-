@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>志愿者</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="daohang">
+        <div class="daohang-bg">
+            <div class="tubiao">
+                <img src="image/tubiao.png">
+            </div>
+            <div class="links">
+                <ul>
+                    <a href="index.html"><li>首页</li></a>
+                    <a href="cultur.html"><li>文化</li></a>
+                    <a href="saishi.html"><li>赛事</li></a>
+                    <a href="changguan.html"><li>场馆</li></a>
+                    <a href="volunteer.html"><li>志愿者</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-bg">
+            <h3>杭州2022年第19届亚运会</h3>
+        </div>
+    </div>
+    <video controls width="1200" >
+        <source src="zyzsp.mp4" type="video/mp4" >
+    </video>
+    <br>
+    <h1 class="introduce">杭州亚运会志愿者招募</h1>
+    <div class="v-kouhao">
+        <h3>志愿者口号</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020年9月22日，杭州亚运会志愿者口号征集活动正式启动，将通过宣传动员社会各界积极参与
+            口号征集，在全社会弘扬<b>“奉献、友爱、互助、进步”</b>的志愿精神，号召广大志愿者以更加饱满的热情、更加良好的状态参与赛事服务
+            和城市服务。志愿者口号征集活动将采用线上线下同步的形式进行，征集期将持续五周左右。应征者可以选
+            择线上提交、邮寄提交和现场提交参与征集。具体投稿渠道、相关要求、所需资料等，将在杭州亚组委官网、官方微信公众号等平台发布。</p>
+    </div>
+    <!-- <img  class="liuchengtu" src="image/liuchengtu.png" > -->
+    <form method="post">
+        <h3 class="zhuche"><span>注册报名</span></h3>
+        <label for="name" >*姓名</label>
+        <input id="name" required>
+        <label>*性别</label>
+        <input type="radio" name="sex" id="1" value="1" required><span style="font-size: 30px;">男</span>
+        <input type="radio" name="sex" id="2" value="2" required><span style="font-size: 30px;">女</span>
+        <br>
+        <label for="tel"  >*手机号</label>
+        <input type="tel" id="tel" required>
+        <label for="email">*邮箱</label>
+        <input id="email" type="email" required>
+        <label for="xueli">*学历</label>
+        <select size="1" id="xueli">
+            <option value="boshi">博士</option>
+            <option value="yanjiusheng">研究生</option>
+            <option value="benke">本科</option>
+            <option value="zhuangke">专科</option>
+            <option value="gaozhong">高中</option>
+            <option value="chuzhong">初中</option>
+            <option value="qita">其他</option>
+        </select>
+        <br>
+        <br>
+        <label for="daye">*出生日期</label>
+        <input type="date" name="date" id="date" required>
+        <label for="beizhu">备注</label>
+        <textarea name="beizhu" id="beizhu" cols="68" rows="10"></textarea>
+        <input class="submit" type="submit" value="提交">
+
+
+    </form>
+
+
+
+
+    <footer>
+        <div id="footer">
+            <p>版权所有 @ 2022 202105015114蒋飞</p>
+            <p>联系邮箱;2721975880@qq.com</p>
+            <p>制作不易，给个高分^_^</p>
+        </div>
+
+    </footer>
+</body>
+</html>
